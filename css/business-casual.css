@@ -181,6 +181,8 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+
+
 }
 
 @media screen and (min-width:1200px) {
@@ -191,7 +193,8 @@ footer p {
     }
 }
 
-.menu-col {
+/*responsive menu columns*/
+.menu-col
   width: 30%;
   float: left;
 
@@ -200,4 +203,10 @@ footer p {
 .menu-box {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-col {
+    min-width: 100%;
+  }
 }
